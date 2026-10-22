@@ -1,0 +1,53 @@
+using UnityEngine;
+using TMPro;
+
+public class WaveSpawner : MonoBehaviour
+{
+    public GameObject[] enemyPrefabs;
+    public Transform[] spawnPoints;
+    public int firstCount = 3;         //1웨이브 마릿수
+    public int addperWave = 2;         //웨이브마다 추가
+    public float spawnGap = 0.5f;      //한 마리씩 나오는 간격
+    public TMP_Text waveText;
+    public int lastWave = 2;
+
+    int wave = 0;
+    int toSpawn = 0;
+    float timer;
+
+    void SpawnOne()
+    {
+        int e = Random.Range(0, enemyPrefabs.Length);
+        int s = Random.Range(0, spawnPoints.Length);
+        Vector3 pos = spawnPoints[s].position;
+        Instantiate(enemyPrefabs[e], pos,
+            Quaternion.identity);
+    }
+    
+    // Update is called once per frame
+    void Update()
+    {
+        if (toSpawn > 0)
+        {
+            timer += Time.deltaTime;
+            if (timer < spawnGap) return;
+            timer = 0f;
+            SpawnOne();
+            toSpawn--;
+            return;
+        }
+        int alive = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        if (alive > 0) return;
+
+        if(lastWave > 0 && wave == lastWave)
+        {
+            GameManager.Instance.GameClear();
+            enabled = false;
+            return;
+        }
+
+        wave++;
+        toSpawn = firstCount + addperWave * (wave - 1);
+        if (waveText != null) waveText.text = "WAVE" + wave;
+    }
+}

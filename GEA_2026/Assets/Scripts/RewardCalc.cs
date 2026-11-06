@@ -16,10 +16,29 @@ public class RewardCalc : MonoBehaviour
     void Test1()
     {
         int hours = playSeconds / 3600;
-        int min = playSeconds % 60;
+        int min = (playSeconds % 3600) / 60;
         int sec = playSeconds % 60;
 
 
-        Debug.Log(hours + "시간" + min + "분" + sec + "초");
+        Debug.Log("플레이 시간" + hours + "시간" + min + "분" + sec + "초");
+
+        int indanggold = gold / members;
+        int bonus = gold % members;
+
+        Debug.Log("1인당 " + indanggold + "G, 리더 보너스 " + bonus + "G");
+
+        int baseExp = kills * expPerKill;
+        int totalExp = (int)(baseExp * expRate);
+
+        Debug.Log("경험치 " + totalExp + "(기본" + baseExp + ")");
+
+        int level = totalExp / 100 + 1;
+        int nextExp = 100 - (totalExp % 100);
+
+        Debug.Log("Lv " + level + ", 다음 레벨까지 " + nextExp);
+
+        float averageDamage = (float)totalDamage / hits;
+       
+        Debug.Log("평균 데미지 " + averageDamage);
     }
 }

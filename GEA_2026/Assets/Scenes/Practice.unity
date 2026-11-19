@@ -260,6 +260,11 @@ GameObject:
   - component: {fileID: 424064625}
   - component: {fileID: 424064624}
   - component: {fileID: 424064626}
+  - component: {fileID: 424064631}
+  - component: {fileID: 424064630}
+  - component: {fileID: 424064629}
+  - component: {fileID: 424064628}
+  - component: {fileID: 424064627}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -361,6 +366,70 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::LevelSystem
   expPerKill: 35000
   killCount: 3
+--- !u!114 &424064627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30556c89952bda9418d90585a9f1fa43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::BattleLog
+  damages: b0040000ac0d000020030000e02e0000ac0d0000b6030000
+  criticalLine: 3000
+--- !u!114 &424064628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f39d5c1b2a7c55f4ca03ad85a50f06d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ForeachPractice
+  monsterHps: 000000002300000000000000500000000c000000
+--- !u!114 &424064629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 223a8ba081fdd0a41beb4e01eff07d8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ListPractice
+--- !u!114 &424064630
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee5b032a050167a4dbf292878ee0c59c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ArrayPractice
+  golds: 2c010000b00400003200000020030000
+--- !u!114 &424064631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfcae084f160bde48807978f1c36f688, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lesson11
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0

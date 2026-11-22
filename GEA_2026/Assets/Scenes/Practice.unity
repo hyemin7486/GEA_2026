@@ -378,8 +378,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30556c89952bda9418d90585a9f1fa43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BattleLog
-  damages: b0040000ac0d000020030000e02e0000ac0d0000b6030000
-  criticalLine: 3000
+  damages: 3f420f0090d003003f420f0020a10700ac0d0000b6030000
+  criticalLine: 300000
 --- !u!114 &424064628
 MonoBehaviour:
   m_ObjectHideFlags: 0

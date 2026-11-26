@@ -265,6 +265,8 @@ GameObject:
   - component: {fileID: 424064629}
   - component: {fileID: 424064628}
   - component: {fileID: 424064627}
+  - component: {fileID: 424064633}
+  - component: {fileID: 424064632}
   m_Layer: 0
   m_Name: Tester
   m_TagString: Untagged
@@ -430,6 +432,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfcae084f160bde48807978f1c36f688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lesson11
+--- !u!114 &424064632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce8ebf4a408ea434f98de4127ecacf3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ClassPractice
+--- !u!114 &424064633
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 424064620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7476e74ea974dc4a936a006e33cbfef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FunctionPractice
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
